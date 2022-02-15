@@ -1,0 +1,300 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.body{
+  background-color: grey;
+}
+a{
+  text-decoration: none;
+  color: grey;
+  margin: 1rem;
+}
+a:hover{
+  color:white;
+}
+ul{
+  display: flex;
+  overflow: hidden;
+}
+li{
+  list-style: none;
+}
+li:hover{
+  background-color: black;
+}
+.titulo { 
+  text-align: center;
+  display: block;
+  font-size: 3rem;
+
+}
+.principal{
+  text-align: center;
+}
+.section{
+  display: block;
+  width: 100%;
+  border-width:500px;
+}
+.t3{
+  width: 525px;
+  margin-top: 15px;
+}
+.foo{
+  display: block;
+ 
+}
+
+    /* GRIDS INDEX */
+
+.container {  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  grid-template-rows: 55px 430px 150px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  background-color: grey;
+  grid-template-areas:
+    "header"
+    "img"
+    "texto"
+    "footer";
+}
+.header { grid-area: header;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:#333;
+}
+.footer { grid-area: footer;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center; }
+
+  /* FIN GRIDS INDEX */
+
+  /* GRIDS NOTICIAS */
+
+.navbar-brand{
+    background-color: grey ;
+}
+
+
+
+
+.jumbotron{
+    background-image:url("img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    border-radius: 0;
+    margin: 0;
+    color: tomato;
+}
+
+.jumbotron h1{
+  color: white
+
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "card1 card2 card3";
+}
+
+.card1{
+  grid-area: card1;
+}
+
+.card2{
+  grid-area: card2;
+}
+.card3{
+  grid-area: card3;
+}
+
+
+
+
+
+.footer { grid-area: footer;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center; }
+  
+ 
+/*FIN DE GRID NOTICIAS */
+
+/*GRID GALERIA */
+
+
+.galeria{
+  padding-bottom: 3em;
+  padding-top:1em;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: 160px;
+  grid-template-areas:
+  "img1 img1 img2 img3"
+  "img1 img1 img4 img4"
+  "img5 img5 img6 img7"
+  "img5 img5 img8 img8";
+  gap:.8em;
+}
+
+
+.pictures_img-1{
+  grid-area: img1;
+}
+.pictures_img-2{
+  grid-area: img2;
+}
+.pictures_img-3{
+  grid-area: img3;
+}
+.pictures_img-4{
+  grid-area: img4;
+}
+.pictures_img-5{
+    grid-area: img5;
+}
+.pictures_img-6{
+  grid-area: img6;
+}
+.pictures_img-7{
+  grid-area: img7;
+}
+.pictures_img-8{
+  grid-area: img8;
+
+}
+.galeria_img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #000000;
+}
+
+.header { grid-area: header;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:#333;
+  padding:20px;
+}
+/*FIN DE GRID GALERIA */
+
+/* MEDIA QUERIES GALERIA*/
+
+@media (max-width:768px){
+
+}
+/*INICIO DE GRID GALERIA DE VIDEOS */
+.videos {
+  padding-bottom: 3em;
+  padding-top:1em;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-auto-rows: auto;
+  grid-template-areas:
+  "video1 video2"
+  "video3 video4"
+  "video5 video6";
+  gap:.8em;
+}
+
+.video{
+  padding:2px;
+  width: 480px;
+  height: 480px;
+  border: 2px solid #000000;
+}
+.video1{
+  grid-area: video1;
+}
+.video2{
+  grid-area: video2;
+}
+
+.video3{
+  grid-area: video3;
+}
+
+.video4{
+  grid-area: video4;
+}
+
+.video5{
+  grid-area: video5;
+}
+
+.video6{
+  grid-area: video6;
+}
+
+.header { grid-area: header;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:#333;
+  padding:20px;
+}
+/*FIN DE GRID GALERIA DE VIDEOS */
+
+.form{
+  text-align: center;
+  margin: 0;
+  border-radius: 3px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: gray;
+  display: block;
+}
+.input{
+  border: 1px solid #111;
+  padding: 10px;
+}
+.textarea{
+  display: inline;
+}
+
+.buttom{
+  border-radius: 1px;
+  display: block;
+  text-align: center;
+  width: 100px;
+  margin: 10px;
+  padding: 0;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
