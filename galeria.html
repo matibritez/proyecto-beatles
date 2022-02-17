@@ -5,53 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <header class="header">
-    
-        <!-- Menu de navegación-->
-         <nav>
-             <ul>
-                 <li><a href="index.html" target="_blank">Inicio</a></li>
-                 <li><a href="noticias.html" target="_blank">Noticias</a></li>
-                 <li><a href="galeria.html" target="_blank">Galeria</a></li>
-                 <li><a href="videos.html" target="_blank">Videos</a></li>
-                 <li><a href="contacto.html" target="_blank">Contacto</a></li>
-             </ul>
-         </nav>
-         <!-- Fin de Menu de navegación-->
-     </header>
+    <!-- Menu de navegación-->
+    <nav class="navbar navbar-expand navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">The Beatles</a>
+        
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="noticias.html">Noticias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="videos.html">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+        
+    <!--Fin de menu de navegación-->
         
         <h1 class="titulo">Galeria</h1>
     <section class="galeria">
-        <div class="pictures pictures_img-1">
-            <img src="img/beatles.jpg" class="galeria_img">
+        <div class="pictures pictures_img-1" data-bs-toggle="modal" data-bs-target="#modalImage1">
+        <img src="img/beatles.jpg" class="galeria_img"> 
         </div>
-        <div class="pictures pictures_img-2">
-            <img src="img/beatlesgaleria.jpg" class="galeria_img">
+        <div class="pictures pictures_img-2" data-bs-toggle="modal" data-bs-target="#modalImage2">
+            <img src="img/beatlesgaleriam.jpg" class="galeria_img">
         </div>
-        <div class="pictures pictures_img-3">
-            <img src="img/beatlesgaleria2jpg.jpg" class="galeria_img">
+        <div class="pictures pictures_img-3" data-bs-toggle="modal" data-bs-target="#modalImage3">
+            <img src="img/beatlesgaleria3.jpg" class="galeria_img">
         </div>
-        <div class="pictures pictures_img-4">
+        <div class="pictures pictures_img-4" data-bs-toggle="modal" data-bs-target="#modalImage4">
             <img src="img/beatlesgaleria4.jpg" class="galeria_img">
         </div>
-        <div class="pictures pictures_img-5">
-            <img src="img/beatlesgaleria5.jpg" class="galeria_img">
+        <div class="pictures pictures_img-5" data-bs-toggle="modal" data-bs-target="#modalImage5">
+            <img src="img/beatlesgaleria5m.jpg" class="galeria_img">
         </div>
-        <div class="pictures pictures_img-6">
+        <div class="pictures pictures_img-6" data-bs-toggle="modal" data-bs-target="#modalImage6">
             <img src="img/beatlesgaleria6.jpg" class="galeria_img">
         </div>
-        <div class="pictures pictures_img-7">
+        <div class="pictures pictures_img-7" data-bs-toggle="modal" data-bs-target="#modalImage7">
             <img src="img/beatlesgaleria7.jpg" class="galeria_img">
         </div>
-        <div class="pictures pictures_img-8">
+        <div class="pictures pictures_img-8" data-bs-toggle="modal" data-bs-target="#modalImage8">
             <img src="img/beatlesgaleria8.jpg" class="galeria_img">
         </div>
         
+        <!-- Modal Gallery-->
+
+        <!-- IMG-1 -->
+        <div
+            tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true"
+            class="modal fade" id="modalImage1">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="img/beatlesm.jpg" class="galeria_img">   
+                </div>
+            </div>
+        
+        </div>
+        <!-- Fin IMG-1 -->
+        <!-- IMG-2 -->
+        <div
+            tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true"
+            class="modal fade" id="modalImage2">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="img/beatlesgaleriam.jpg" class="galeria_img">   
+                </div>
+            </div>
+        </div>
+        <!-- Fin IMG-2 -->
+        <!-- IMG-3 -->
+        <div
+            tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true"
+            class="modal fade" id="modalImage3">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="img/beatlesgaleria3.jpg" class="galeria_img">   
+                </div>
+            </div>
+        </div>
+        <!-- Fin IMG-3 -->
+        <!-- IMG-4 -->
+        <div
+            tabindex="-1" aria-labelledby="modalImage4" aria-hidden="true"
+            class="modal fade" id="modalImage4">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="img/beatlesgaleria4.jpg" class="galeria_img">   
+                </div>
+            </div>
+        </div>
+        <!-- IMG-5 -->
+        <div
+            tabindex="-1" aria-labelledby="modalImage5" aria-hidden="true"
+            class="modal fade" id="modalImage5">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="img/beatlesgaleria5m.jpg" class="galeria_img">   
+                </div>
+            </div>
+        </div>
+        <!-- Fin IMG-5 -->
+        <!-- IMG-6 -->
+        <div
+            tabindex="-1" aria-labelledby="modalImage6" aria-hidden="true"
+            class="modal fade" id="modalImage6">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="img/beatlesgaleria6m.jpg" class="galeria_img">   
+                </div>
+            </div>
+        </div>
+        <!-- Fin IMG-6 -->
+        <!-- IMG-7 -->
+        <div
+            tabindex="-1" aria-labelledby="modalImage7" aria-hidden="true"
+            class="modal fade" id="modalImage7">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="img/beatlesgaleria7m.jpg" class="galeria_img">   
+                </div>
+            </div>
+        </div>
+        <!-- Fin IMG-7 -->
+        <!-- IMG-8 -->
+        <div
+            tabindex="-1" aria-labelledby="modalImage8" aria-hidden="true"
+            class="modal fade" id="modalImage8">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <img src="img/beatlesgaleria8m.jpg" class="galeria_img">   
+                </div>
+            </div>
+        </div>
+        <!-- Fin IMG-8 -->
+        
+        
+    <!-- Fin Modal Gallery-->
+        
     </section>    
-    <hr>
+    
     <footer class="footer">
         <!-- Seccion 1 footer-->
         <div class="foo">
@@ -77,53 +193,7 @@
             
         </div>         
     </footer>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </body>
-</html>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>
 </html>
