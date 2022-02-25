@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  color: red;
+}
+
+.body {
+  background-color: gray;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  margin: 1rem;
+}
+
+a:hover {
+  color: white;
+}
+
+ul {
+  display: flex;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  background-color: black;
+}
+
+.titulo {
+  text-align: center;
+  display: block;
+  font-size: 3rem;
+  color: #333;
+  background-color: gray;
+}
+
+.principal {
+  text-align: center;
+  background-color: gray;
+}
+
+.section {
+  display: block;
+  width: 100%;
+  border-width: 500px;
+}
+
+.t3 {
+  width: 110%;
+  margin-top: 15px;
+}
+
+.foo {
+  display: block;
+}
+
+/* BT INDEX */
+.navbar {
+  background-color: #333;
+}
+
+.jumbotron1 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0;
+  margin: 0;
+  color: tomato;
+}
+
+.beatles {
+  height: 82 0px;
+  width: 100%;
+  background-color: gray;
+  align-items: center;
+  text-align: center;
+}
+
+.img-p {
+  height: 650px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.parrafo {
+  display: block;
+}
+
+.footer {
+  grid-area: footer;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+/* FIN BT INDEX */
+/* BT NOTICIAS */
+.navbar {
+  background-color: #333;
+}
+
+.jumbotron {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0;
+  margin: 0;
+  color: tomato;
+}
+
+.curiosidades {
+  min-height: 600px;
+  width: 100%;
+  background-color: gray;
+  color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
+}
+.curiosidades .item {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  text-align: center;
+  line-height: 250px;
+  font-size: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.item1 {
+  background-image: url(img/comienzo.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 400px !important;
+  height: 400px !important;
+}
+
+.item2 {
+  background-image: url(img/beatlesderechos.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 400px !important;
+  height: 400px !important;
+}
+
+.item3 {
+  background-image: url(img/the-beatles.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 400px !important;
+  height: 400px !important;
+}
+
+.item h5 {
+  width: 100%;
+  font-size: 20px;
+  background-color: #c0adc0;
+}
+
+.item .i-footer {
+  height: 80px;
+  width: 100%;
+  background-color: #c0adc0;
+  line-height: 25px;
+}
+
+.footer {
+  grid-area: footer;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  color: #000000;
+  width: 100%;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+/*FIN DE BT NOTICIAS */
+/*GRID GALERIA */
+.gallery {
+  background-color: gray;
+}
+
+.pictures {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: gray;
+}
+
+.pictures:before {
+  content: "Abrir Imagen";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: gray;
+  transform: scale(0);
+  transition: transform 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.pictures:hover::before {
+  transform: scale(1) rotate(360deg);
+}
+
+.galeria_img {
+  width: 100%;
+  height: 100%;
+  background-image: cover;
+  object-fit: cover;
+  border: 3px solid #000000;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+}
+
+/*FIN DE GRID GALERIA */
+/*INICIO DE GRID GALERIA DE VIDEOS */
+.videos {
+  padding-bottom: 3em;
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-template-areas: "video1 video2" "video3 video4" "video5 video6";
+  gap: 0.8em;
+  background-color: gray;
+}
+
+.video {
+  padding: 2px;
+  width: 480px;
+  height: 480px;
+  border: 2px solid #000000;
+}
+
+.video1 {
+  grid-area: video1;
+}
+
+.video2 {
+  grid-area: video2;
+}
+
+.video3 {
+  grid-area: video3;
+}
+
+.video4 {
+  grid-area: video4;
+}
+
+.video5 {
+  grid-area: video5;
+}
+
+.video6 {
+  grid-area: video6;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #333;
+  padding: 20px;
+}
+
+/*FIN DE GRID GALERIA DE VIDEOS */
+.cont {
+  background: gray;
+}
+
+.pc {
+  font-size: 30px;
+}
+
+.form {
+  width: 400px;
+  height: 500px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 40px -10px #000;
+  margin: calc(50vh - 220px) auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40vh);
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+}
+
+.form form {
+  background-color: gray;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: all 0.3s;
+  border-bottom: 2px solid gray;
+}
+
+input:focus {
+  border-bottom: 2px solid #333;
+}
+
+p:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 14px;
+  color: gray;
+}
+
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 2px solid gray;
+  background: 0;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: gray;
+  color: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */
