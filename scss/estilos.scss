@@ -90,6 +90,37 @@ li:hover{
   
 }
 
+@mixin sizes($width,$height,$bcolor){
+  height: $height;
+  width: $width;
+  background-color: $bcolor;
+}
+
+.box{
+  @include sizes(100%,50px,$color2);
+  color:#fff;
+  text-align: center;
+  font-size: 40px;
+}
+.box2{
+  @include sizes(100%,50px,#17252a);
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+}
+.box3{
+  @include sizes(100%,50px,#2b7a78);
+  color:#fff;
+  text-align: center;
+  font-size: 40px;
+}
+.box4{
+  @include sizes(100%,50px,#3AAFA9);
+  color:#fff;
+  text-align: center;
+  font-size: 40px;
+  }
+
 .footer{ grid-area: footer;
   list-style-type: none;
   margin: 0;
@@ -128,10 +159,9 @@ li:hover{
   align-items: center;
   align-content:space-around;
 }
-.curiosidades .item{
+.item{
     height: 400px;
     width: 400px;
-    background-color: white;
     text-align: center;
     line-height: 250px;
     font-size: 20px;
@@ -139,28 +169,23 @@ li:hover{
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    background-size: cover;
+    background-position: center;
 }
 .item1{
-  background-image: url(img/comienzo.jpeg);
-  background-size: cover;
-  background-position: center;
-  width: 400px  !important;
-  height: 400px !important;
+  @extend .item;
+  background-image: url(/img/comienzo.jpeg);
+  
 }
 .item2{
-  background-image: url(img/beatlesderechos.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 400px  !important;
-  height: 400px !important;
+  @extend .item;
+  background-image: url(/img/beatlesderechos.jpg);
+  
 }
 
 .item3{
-  background-image: url(img/the-beatles.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 400px  !important;
-  height: 400px !important;
+  @extend .item;
+  background-image: url(/img/the-beatles.jpg);
 }
 
 .item h5{
@@ -168,13 +193,24 @@ li:hover{
   font-size: 20px;
   background-color: rgb(192, 173, 192);
 }
-.item .i-footer{
-  height: 80px;
-  width: 100%;
-  background-color: rgb(192, 173, 192);
-  line-height: 25px;
-}
 
+/* maps i-footer */
+
+$footers: (
+  footer1: cursive,
+  footer2: fantasy,
+  footer3: monospace,
+);
+
+@each $footer,$font in $footers{
+    .i--#{$footer}{
+      font-family: $font;
+      height: 80px;
+      width: 100%;
+      background-color: rgb(192, 173, 192);
+      line-height: 25px;
+    }
+}
 .footer { grid-area: footer;
     list-style-type: none;
     margin: 0;
