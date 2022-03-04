@@ -211,6 +211,11 @@ $footers: (
       line-height: 25px;
     }
 }
+.titulo2{
+  font-family: map-get($footers, footer1);
+  text-align: center;
+  font-size: 3rem;
+}
 .footer { grid-area: footer;
     list-style-type: none;
     margin: 0;
