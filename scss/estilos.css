@@ -360,9 +360,11 @@ li:hover {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: auto;
-      grid-template-areas: "video1 video2" "video3 video4" "video5 video6";
+      grid-template-areas: "video1 video2"
+ "video3 video4"
+ "video5 video6";
   gap: .8em;
-  background-color: gray;
+  background-color:gray;
 }
 
 .video {
