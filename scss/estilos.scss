@@ -148,18 +148,18 @@ li:hover{
 }
 .item1{
   @extend .item;
-  background-image: url(img/comienzo.jpeg);
+  background-image: url(../img/comienzo.jpeg);
   
 }
 .item2{
   @extend .item;
-  background-image: url(img/beatlesderechos.jpg);
+  background-image: url(../img/beatlesderechos.jpg);
   
 }
 
 .item3{
   @extend .item;
-  background-image: url(img/the-beatles.jpg);
+  background-image: url(../img/the-beatles.jpg);
 }
 
 .item h5{
