@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *::-moz-selection {
@@ -27,17 +26,6 @@ a:hover {
   color: white;
 }
 
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-}
-
-li {
-  list-style: none;
-}
-
 li:hover {
   background-color: black;
 }
@@ -55,21 +43,6 @@ li:hover {
   background-color: gray;
 }
 
-.section {
-  display: block;
-  width: 100%;
-  border-width: 500px;
-}
-
-.t3 {
-  width: 110%;
-  margin-top: 15px;
-}
-
-.foo {
-  display: block;
-}
-
 /* BT INDEX */
 .navbar {
   background-color: #333;
@@ -85,24 +58,18 @@ li:hover {
 }
 
 .beatles {
-  height: 82  0px;
+  height: 82 0px;
   width: 100%;
   background-color: gray;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
 }
 
 .img-p {
   height: 650px;
   width: 80%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-size: cover;
 }
 
@@ -146,22 +113,6 @@ li:hover {
   font-size: 40px;
 }
 
-.footer {
-  grid-area: footer;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  text-align: center;
-}
-
 /* FIN BT INDEX */
 /* BT NOTICIAS */
 .navbar {
@@ -182,49 +133,37 @@ li:hover {
   width: 100%;
   background-color: gray;
   color: #000000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: space-around;
 }
 
-.item, .item1, .item2, .item3 {
+.item, .item3, .item2, .item1 {
   height: 400px;
   width: 400px;
   text-align: center;
   line-height: 250px;
   font-size: 20px;
   border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
   background-size: cover;
   background-position: center;
 }
 
 .item1 {
-  background-image: url(/img/comienzo.jpeg);
+  background-image: url(../img/comienzo.jpeg);
 }
 
 .item2 {
-  background-image: url(/img/beatlesderechos.jpg);
+  background-image: url(../img/beatlesderechos.jpg);
 }
 
 .item3 {
-  background-image: url(/img/the-beatles.jpg);
+  background-image: url(../img/the-beatles.jpg);
 }
 
 .item h5, .item1 h5, .item2 h5, .item3 h5 {
@@ -264,23 +203,6 @@ li:hover {
   font-size: 3rem;
 }
 
-.footer {
-  grid-area: footer;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  color: #000000;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  text-align: center;
-}
-
 /*FIN DE BT NOTICIAS */
 /*GRID GALERIA */
 .gallery {
@@ -302,27 +224,16 @@ li:hover {
   left: 0;
   right: 0;
   background-color: gray;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: -webkit-transform .4s;
-  transition: -webkit-transform .4s;
-  transition: transform .4s;
-  transition: transform .4s, -webkit-transform .4s;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  transform: scale(0);
+  transition: transform 0.4s;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 1.5rem;
 }
 
 .pictures:hover::before {
-  -webkit-transform: scale(1) rotate(360deg);
-          transform: scale(1) rotate(360deg);
+  transform: scale(1) rotate(360deg);
 }
 
 .galeria_img {
@@ -336,16 +247,9 @@ li:hover {
 
 .header {
   grid-area: header;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   background-color: #333;
   padding: 20px;
 }
@@ -355,16 +259,12 @@ li:hover {
 .videos {
   padding-bottom: 3em;
   padding-top: 1em;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: auto;
-      grid-template-areas: "video1 video2"
- "video3 video4"
- "video5 video6";
-  gap: .8em;
-  background-color:gray;
+  grid-template-areas: "video1 video2" "video3 video4" "video5 video6";
+  gap: 0.8em;
+  background-color: gray;
 }
 
 .video {
@@ -375,53 +275,34 @@ li:hover {
 }
 
 .video1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: video1;
 }
 
 .video2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: video2;
 }
 
 .video3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: video3;
 }
 
 .video4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
   grid-area: video4;
 }
 
 .video5 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   grid-area: video5;
 }
 
 .video6 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
   grid-area: video6;
 }
 
 .header {
   grid-area: header;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   background-color: #333;
   padding: 20px;
 }
@@ -440,14 +321,12 @@ li:hover {
   height: 500px;
   background: white;
   border-radius: 8px;
-  -webkit-box-shadow: 0 0 40px -10px #000;
-          box-shadow: 0 0 40px -10px #000;
+  box-shadow: 0 0 40px -10px #000;
   margin: calc(50vh - 220px) auto;
   padding: 20px 30px;
   max-width: calc(100vw - 40vh);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: relative;
 }
 
@@ -458,15 +337,13 @@ li:hover {
 .input {
   width: 100%;
   padding: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: none;
   outline: none;
   resize: none;
   border: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: all 0.3s;
   border-bottom: 2px solid gray;
 }
 
@@ -486,17 +363,15 @@ button {
   float: right;
   padding: 8px 12px;
   margin: 8px 0 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border: 2px solid gray;
   background: 0;
   color: black;
   cursor: pointer;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 button:hover {
   background: gray;
   color: white;
-}
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
