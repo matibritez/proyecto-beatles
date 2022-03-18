@@ -42,24 +42,59 @@
       </div>
     </nav>
     <!--Fin de menu de navegación-->
-    <section class="principal">
-        <h1 class="titulo">Formulario de Contacto</h1>
-        <p class="pc">Si quieres contactarnos con nosotros,
-        </p>
-        <p class="pc">llena el formulario</p>
-        <p class="pc">y te responderemos</p>
-    <form class="form">
-        <h2>Datos:</h2>
-        <label for="nombre">Tu nombre:</label>
-        <input class="input" type="text" id="pnombre" name="pnombre" placeholder="Nombre" required>
-        <label for="email">Tu E-mail:</label>
-        <input class="input" type="text" id="email" name="email" placeholder="Email" required>
-        <br>
-        <label for="mensaje">Tu mensaje:</label>
-        <textarea class="textarea" name="mensaje" id="" cols="35 " rows="7" required placeholder="Dejanos tu mensaje..."></textarea>
-        <input class="button" type="submit" value="Enviar Datos">
+    <!-- Main de contacto -->
+    <main class="main-contacto">
+      <div class="main-div-titulo">
+          <h1 class="h1-contacto" >Contáctanos</h1>
+          <p class="p-contacto">En caso de dudas o mayor asesoramiento sobre nuestros servicios contáctate con nosotros por cualquiera de los medios ofrecidos.</p>
+          <div class="envia-un-mensaje">
+              <a href="#">
+                  Envía un mensaje
+              </a>
+          </div>
+      </div>
+      <aside class="aside-contacto">
+          <h2 class="h2-aside">Información de contacto</h2>
+          <div class="aside-contacto-div">
+              <h3 class="h3-aside-contacto">Nuestras oficinas</h3>
+              <p class="parrafo oficinas">272 Jast Islands, East Margieview</p>
+          </div>
+          <div class="aside-contacto-div">
+              <h3 class="h3-aside-contacto">Horario de oficina</h3>
+              <p class="parrafo horario">Lun - Vie   8:30 - 12:30</p>
+          </div>
+          <div class="aside-contacto-div">
+              <h3 class="h3-aside-contacto">Escríbenos</h3>
+              <p class="parrafo escribenos">+1 (345) 599-7679</p>
+          </div>
+          <div class="aside-contacto-div">
+              <h3 class="h3-aside-contacto">Emergencias</h3>
+              <p class="parrafo emergencias">Lun - Dom 24 Hs. / +1 (345) 599-6689 </p>
+          </div>
+      </aside>
+  </main>
+
+  <section class="formulario-contacto">
+    <form class= "formulario" action="#">
+        <legend>Formulario de contacto</legend>
+        <div class="form-nombre">
+            <label for="nombre">Tu nombre:</label>
+            <input class="inp-nombre" type="text" name="nombre" placeholder="Nombre" />
+        </div>
+        <div class="form-email">
+            <label for="email">Tu E-mail:</label>
+            <input class="inp-email" placeholder="E-mail" type="email" name="email" required />
+        </div>
+        <div class="form-mensaje">
+            <label for="mensaje" name="mensaje">Tu mensaje: </label>
+            <textarea class="txt-mensaje" name="mensaje" id="" cols="50 " rows="7" placeholder="Dejanos tu mensaje..."></textarea>
+        </div>
+        <div class="enviar">
+            <input type="submit" value="Enviar datos">
+        </div>
     </form>
 </section>
+
 <!-- Inicio footer -->
 <footer class="bg-dark text-white pt-5 pb-4">
 
