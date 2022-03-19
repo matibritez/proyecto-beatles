@@ -193,7 +193,7 @@ li:hover {
 
 /* maps i-footer */
 .i--footer1 {
-  font-family: cursive;
+  font-family: monospace;
   height: 80px;
   width: 100%;
   background-color: #c0adc0;
@@ -201,7 +201,7 @@ li:hover {
 }
 
 .i--footer2 {
-  font-family: fantasy;
+  font-family: monospace;
   height: 80px;
   width: 100%;
   background-color: #c0adc0;
@@ -217,7 +217,7 @@ li:hover {
 }
 
 .titulo2 {
-  font-family: cursive;
+  font-family: monospace;
   text-align: center;
   font-size: 3rem;
 }
