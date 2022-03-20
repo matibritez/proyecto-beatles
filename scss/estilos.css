@@ -171,6 +171,7 @@ li:hover {
       align-content: space-between;
   background-size: cover;
   background-position: center;
+  margin-bottom: 2rem;
 }
 
 .item1 {
@@ -194,7 +195,7 @@ li:hover {
 /* maps i-footer */
 .i--footer1 {
   font-family: monospace;
-  height: 80px;
+  height: 100px;
   width: 100%;
   background-color: #c0adc0;
   line-height: 25px;
@@ -202,7 +203,7 @@ li:hover {
 
 .i--footer2 {
   font-family: monospace;
-  height: 80px;
+  height: 100px;
   width: 100%;
   background-color: #c0adc0;
   line-height: 25px;
@@ -210,7 +211,7 @@ li:hover {
 
 .i--footer3 {
   font-family: monospace;
-  height: 80px;
+  height: 100px;
   width: 100%;
   background-color: #c0adc0;
   line-height: 25px;
