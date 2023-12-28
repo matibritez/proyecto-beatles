@@ -1,0 +1,84 @@
+.formContainer {
+  background-color: #a7bcff;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formContainer .formWrapper {
+  background-color: white;
+  padding: 20px 60px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.formContainer .formWrapper .logo {
+  color: #5d5b8d;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.formContainer .formWrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+.formContainer .formWrapper input {
+  padding: 15px;
+  border: none;
+  width: 250PX;
+  border-bottom: 1PX solid #a7bcff;
+}
+
+.formContainer .formWrapper input::-webkit-input-placeholder {
+  color: #afafaf;
+}
+
+.formContainer .formWrapper input:-ms-input-placeholder {
+  color: #afafaf;
+}
+
+.formContainer .formWrapper input::-ms-input-placeholder {
+  color: #afafaf;
+}
+
+.formContainer .formWrapper input::placeholder {
+  color: #afafaf;
+}
+
+.formContainer .formWrapper button {
+  background-color: #7b96ec;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.formContainer .formWrapper p {
+  color: #5d5d8d;
+  font-size: 12px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=styles.css.map */
